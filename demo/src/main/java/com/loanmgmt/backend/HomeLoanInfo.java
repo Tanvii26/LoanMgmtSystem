@@ -15,13 +15,17 @@ import org.springframework.data.mongodb.core.mapping.DocumentReference;
 public class HomeLoanInfo {
     @Id
     ObjectId id;
+
     String propertyType;
+
     @DocumentReference
     PropertyLocation propertyLocation;
+
     String propertyValue;
     String loanAmount;
     String loanTenure;
     String interestRateType;
+
     @DocumentReference
     CoApplicant coApplicant;
 }

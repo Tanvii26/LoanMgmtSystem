@@ -12,8 +12,10 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @AllArgsConstructor
 @NoArgsConstructor
 public class PropertyLocation {
+
     @Id
     ObjectId id;
+
     String city;
     String state;
     String zip;

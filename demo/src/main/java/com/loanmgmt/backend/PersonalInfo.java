@@ -15,8 +15,10 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 public class PersonalInfo {
+
     @Id
     ObjectId id;
+
     String fullName;
     Date dateOfBirth;
     String phone;

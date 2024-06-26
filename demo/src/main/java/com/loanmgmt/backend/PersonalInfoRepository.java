@@ -5,6 +5,6 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.List;
 
-public interface HomeLoanDataRepository extends MongoRepository<HomeLoanData, ObjectId> {
-  List<HomeLoanData> findHomeLoanDataByEmail(String email);
+public interface PersonalInfoRepository extends MongoRepository<PersonalInfo, ObjectId> {
+  List<PersonalInfo> findPersonalInfoById(ObjectId id);
 }
