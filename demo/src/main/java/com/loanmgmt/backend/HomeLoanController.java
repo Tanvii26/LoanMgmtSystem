@@ -23,7 +23,8 @@ public class HomeLoanController {
     }
 
     @GetMapping("/appliedhomeloans/{email}")
-    public ResponseEntity<List<HomeLoanData>> getHomeLoans(String email) throws Exception {
+    public ResponseEntity<List<HomeLoanData>> getHomeLoans(@PathVariable String email) throws Exception {
+      System.out.println("Email is : " + email);
       List<HomeLoanData> homeLoanDataList = homeLoanService.getData(email);
       if(null != homeLoanDataList && !homeLoanDataList.isEmpty()) return new ResponseEntity<List<HomeLoanData>>(homeLoanDataList, HttpStatus.OK);
       throw new Exception();

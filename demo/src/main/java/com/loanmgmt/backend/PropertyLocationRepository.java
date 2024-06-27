@@ -2,9 +2,11 @@ package com.loanmgmt.backend;
 
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-public interface PropertyLocationRespository extends MongoRepository<PropertyLocation, ObjectId> {
+@Repository
+public interface PropertyLocationRepository extends MongoRepository<PropertyLocation, ObjectId> {
   List<PropertyLocation> findPropertyLocationById(ObjectId id);
 }
