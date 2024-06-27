@@ -1,0 +1,41 @@
+<!-- <p>home-loan-form works!</p> -->
+<form (ngSubmit)="onSubmit()">
+  <div class="top-bar">
+    <a class="back" routerLink="/">⬅</a>
+    <h2 class="heading">Home Loan Application</h2>
+  </div>
+  <div class="form">
+    <div class="inputs">
+      <label for="propertyType">Property Type:</label>
+      <input type="text" id="propertyType" [(ngModel)]="homeLoan.propertyType" name="propertyType" required>
+    </div>
+    <div class="inputs">
+      <label for="propertyLocation">Property Location:</label>
+      <input type="text" id="propertyLocation" [(ngModel)]="homeLoan.propertyLocation" name="propertyLocation" required>
+    </div>
+    <div class="inputs">
+      <label for="propertyValue">Property Value:</label>
+      <input type="number" id="propertyValue" [(ngModel)]="homeLoan.propertyValue" name="propertyValue" required>
+    </div>
+    <div class="inputs">
+      <label for="loanAmountRequested">Loan Amount Requested:</label>
+      <input type="number" id="loanAmountRequested" [(ngModel)]="homeLoan.loanAmountRequested" name="loanAmountRequested" required>
+    </div>
+    <div class="inputs">
+      <label for="loanTenure">Loan Tenure (in years):</label>
+      <input type="number" id="loanTenure" [(ngModel)]="homeLoan.loanTenure" name="loanTenure" required>
+    </div>
+    <div class="inputs">
+      <label for="interestRateType">Interest Rate Type:</label>
+      <select id="interestRateType" [(ngModel)]="homeLoan.interestRateType" name="interestRateType" required>
+        <option>Fixed</option>
+        <option>Variable</option>
+      </select>
+    </div>
+    <div class="inputs">
+      <label for="coApplicantDetails">Co-Applicant Details (if any):</label>
+      <input type="text" id="coApplicantDetails" [(ngModel)]="homeLoan.coApplicantDetails" name="coApplicantDetails">
+    </div>
+    <button type="submit">Submit</button>
+  </div>
+  </form>

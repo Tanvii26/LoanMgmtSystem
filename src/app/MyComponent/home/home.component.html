@@ -9,9 +9,15 @@
             <div class="nav-right">
                 <ul class="nav-lis">
                     <li class="item">About</li>
-                    <li class="item">Home Loan</li>
-                    <li class="item">Personal Loan</li>
-                    <li class="item">Contact</li>
+                    <a routerLink="home-loan">
+                        <li class="item">Home Loan</li>
+                    </a>
+                    <a routerLink="personal-loan">
+                        <li class="item">Personal Loan</li>
+                    </a>
+                    <a href="#contact">
+                        <li class="item">Contact</li>
+                    </a>
                 </ul>
             </div>
         </div>
@@ -59,17 +65,22 @@
         <div class="loan-left">
             <h2>Home Loan</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus animi dolorem suscipit minus quia, magnam ad corporis! Tenetur commodi porro voluptate illo? Optio, libero aperiam?</p>
-            <button class="btn-dark">Apply</button>
+            <a routerLink="home-loan">
+                <button class="btn-dark">Apply</button>
+            </a>
         </div>
         
         <div class="loan-right">
             <h2>Personal Loan</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus animi dolorem suscipit minus quia, magnam ad corporis! Tenetur commodi porro voluptate illo? Optio, libero aperiam?</p>
-            <button class="btn-dark">Apply</button>
+            <a routerLink="personal-loan">
+
+                <button class="btn-dark">Apply</button>
+            </a>
         </div>
     </div>
 
-    <div class="contact">
+    <div class="contact" id="contact">
         <div class="contact-left">
             <h1>Stay Connected.</h1>
             <h1>Learn from Our</h1>

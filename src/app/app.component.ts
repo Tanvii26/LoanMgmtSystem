@@ -7,7 +7,7 @@ import { HomeComponent } from "./MyComponent/home/home.component";
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, HomeComponent]
+    imports: [RouterOutlet]
 })
 export class AppComponent {
   title = 'loan-mgmt-system';
