@@ -6,27 +6,19 @@ import lombok.NoArgsConstructor;
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-import org.springframework.data.mongodb.core.mapping.DocumentReference;
 
-import java.util.Date;
-
-@Document(collection = "PersonalInfoData")
+@Document(collection = "PersonalLoanInfo")
 @Data // Takes care of all getter setter methods
 @AllArgsConstructor
 @NoArgsConstructor
-public class PersonalInfo {
+public class PersonalLoanInfo {
 
-    @Id
-    ObjectId id;
+  @Id
+  ObjectId id;
 
-    String fullName;
-    Date dateOfBirth;
-    String phone;
+  String loanPurpose;
 
-    String email;
+  LoanDetails loanDetails;
 
-    @DocumentReference
-    Address address;
 
-    String idNumber;
 }

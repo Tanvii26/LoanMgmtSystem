@@ -8,24 +8,26 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.DocumentReference;
 
-@Document(collection = "HomeLoanInfoData")
+@Document(collection = "PersonalLoanData")
 @Data // Takes care of all getter setter methods
 @AllArgsConstructor
 @NoArgsConstructor
-public class HomeLoanInfo {
-    @Id
-    ObjectId id;
+public class PersonalLoanData {
 
-    String propertyType;
+  @Id
+  ObjectId id;
 
-    @DocumentReference
-    PropertyLocation propertyLocation;
+  String email;
 
-    String propertyValue;
-    String loanAmount;
-    String loanTenure;
-    String interestRateType;
+  @DocumentReference
+  PersonalInfo personalInfo;
 
-    @DocumentReference
-    CoApplicant coApplicant;
+  @DocumentReference
+  EmploymentInfo employmentInfo;
+
+  @DocumentReference
+  FinancialInfo financialInfo;
+
+  @DocumentReference
+  PersonalLoanInfo personalLoanInfo;
 }

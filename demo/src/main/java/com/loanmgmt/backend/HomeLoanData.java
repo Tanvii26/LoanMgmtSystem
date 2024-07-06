@@ -17,6 +17,8 @@ public class HomeLoanData {
     @Id
     ObjectId id;
 
+    String email;
+
     @DocumentReference
     PersonalInfo personalInfo;
 
