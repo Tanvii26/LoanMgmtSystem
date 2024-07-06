@@ -30,4 +30,6 @@ public class PersonalLoanData {
 
   @DocumentReference
   PersonalLoanInfo personalLoanInfo;
+
+  String status;
 }

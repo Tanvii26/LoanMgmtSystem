@@ -37,6 +37,7 @@ public class PersonalLoanService {
     personalLoanInfoRepository.insert(personalLoanData.getPersonalLoanInfo());
 
     personalLoanData.setEmail(personalLoanData.getPersonalInfo().getEmail());
+    personalLoanData.setStatus("0");
     personalLoanDataRepository.insert(personalLoanData);
 
     return "Done";

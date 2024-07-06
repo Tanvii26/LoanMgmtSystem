@@ -31,4 +31,6 @@ public class HomeLoanData {
     @DocumentReference
     HomeLoanInfo homeLoanInfo;
 
+    String status;
+
 }

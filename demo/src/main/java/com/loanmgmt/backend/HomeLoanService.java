@@ -42,6 +42,7 @@ public class HomeLoanService {
     homeLoanInfoRepository.insert(homeLoanData.getHomeLoanInfo());
 
     homeLoanData.setEmail(homeLoanData.getPersonalInfo().getEmail());
+    homeLoanData.setStatus("0");
     homeLoanDataRepository.insert(homeLoanData);
 
     return "Done";
