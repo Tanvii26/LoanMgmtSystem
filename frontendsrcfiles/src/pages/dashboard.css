@@ -1,0 +1,57 @@
+.topbar{
+    height: 20vh;
+    padding: 10px;
+    background: #aeb5ad;
+    position: relative;
+}
+.img{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 65px;
+    left: 40%;
+    border-radius: 50%;
+}
+.dashboard{
+    position: relative;
+    width: 100vw;
+}
+
+.lower{
+    width: 100vw;
+    position: absolute;
+    top: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.loans{
+    display: flex;
+    margin-top: 15px;
+}
+.loan-section{
+    width: 45vw;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 50vh;
+}
+.card-container{
+    width: 100%; 
+}
+.loancard{
+    display: flex;
+    justify-content: space-around;
+}
+h4{
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 70%;
+    padding: 5px;
+}

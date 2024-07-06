@@ -1,0 +1,42 @@
+
+form{
+    background-image: url(https://img.freepik.com/free-photo/industrial-park-factory-building-warehouse_1417-1928.jpg?t=st=1718910442~exp=1718914042~hmac=e5c0d66d8be52db697a583c9fe8813420496c0b9118873597e3f9906f0916fa8&w=826);
+    background-size: cover;
+    height: 100vh;
+    /* padding: 50px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signin{
+    height: 70vh;
+    width: 40vw;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(184, 217, 245, 0.495);
+    -webkit-box-shadow: 12px -13px 20px 0px rgba(255, 255, 255, 0.64);
+    -moz-box-shadow: 12px -13px 20px 0px rgba(255, 255, 255, 0.64);
+    box-shadow: 12px -13px 20px 0px rgba(255, 255, 255, 0.64);
+}
+button{
+    font-weight: bolder;
+    border-radius: 5px;
+}
+::placeholder{
+    color: white;
+}
+.form-inp{
+    border-bottom: 2px solid black;
+    width: 80%;
+}
+.span{
+    margin-top: 20px;
+    font-weight: 600;
+}
+.signup-link{
+    text-decoration: underline;
+}
