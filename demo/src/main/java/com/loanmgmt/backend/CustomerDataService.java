@@ -28,4 +28,9 @@ public class CustomerDataService {
         return "Verified";
     }
 
+    public CustomerData getUserName(String email) {
+      List<CustomerData> customerData = customerDataRepository.findCustomerDataByEmail(email);
+      return customerData.getFirst();
+    }
+
 }
